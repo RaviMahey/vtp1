@@ -1,0 +1,14 @@
+
+a{
+  color: #282c34 !important ;
+  text-decoration: none !important;
+  
+}
+.active{
+  color: blue !important;
+}
+
+#hi{
+  height: 92vh;
+  /* background-color: aqua; */
+}

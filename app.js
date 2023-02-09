@@ -19,6 +19,10 @@ app.get('/logout',(req,res)=>{
   res.status(200).send("user logout");
   // req.user.save();
 })
+if(process.env.NODE_ENV==="production"){
+  app.use(express.static("client/build"));
+}
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
